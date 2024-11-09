@@ -2,6 +2,7 @@
     <div class="container box">
         <div class="row-fluid clearfix">
           <span class="js-close alignright btn btn-mini btn-danger">Close</span>
+          <span class="alignright btn btn-info" onclick="const bundle = '{{bundle}}'; fetch('/package/uninstall', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify([bundle]) }).then(response => response.json()).then(data => alert('Success: ' + JSON.stringify(data))).catch(error => alert('Error: ' + error));">Delete</span>
           {{#price}}
           <div class="description-price-container">
             <div class="description-price">{{price}}</div>

@@ -1337,7 +1337,7 @@ function Desktop(elements) {
     })
 
     var prevent = function (ev) {
-        ev.preventDefault()
+       // ev.preventDefault()
     }
     $('body')[0].addEventListener('gesturestart', prevent)
     $('body')[0].addEventListener('gesturechange', prevent)

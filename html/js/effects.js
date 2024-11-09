@@ -455,6 +455,7 @@ JqueryClass('effectBox', {
                                   : '',
                 build_env_uppercase: (plugin.buildEnvironment || "LOCAL").toUpperCase(),
                 show_build_env: plugin.buildEnvironment !== "prod",
+		bundle: plugin.bundles[0],
             };
 
             var render = function(metadata) {

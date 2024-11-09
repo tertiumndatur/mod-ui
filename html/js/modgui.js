@@ -1998,7 +1998,7 @@ JqueryClass('film', baseWidget, {
         })
 
         self.on('dragstart', function (event) {
-            event.preventDefault()
+            //event.preventDefault()
         })
 
         var moveHandler = function (e) {
@@ -2028,7 +2028,7 @@ JqueryClass('film', baseWidget, {
          })
 
         self.bind('touchstart', function (e) {
-            e.preventDefault();
+            //e.preventDefault();
             if (!self.data('enabled')) {
                 return self.film('prevent', e)
             }
@@ -2382,7 +2382,7 @@ JqueryClass('switchWidget', baseWidget, {
          })
 
         self.bind('touchstart', function (e) {
-            e.preventDefault();
+            //e.preventDefault();
             if (!self.data('enabled')) {
                 return self.switchWidget('prevent', e)
             }
@@ -2495,7 +2495,7 @@ JqueryClass('bypassWidget', baseWidget, {
          })
 
         self.bind('touchstart', function (e) {
-            e.preventDefault();
+            //e.preventDefault();
             if (!self.data('enabled')) {
                 return self.bypassWidget('prevent', e)
             }
